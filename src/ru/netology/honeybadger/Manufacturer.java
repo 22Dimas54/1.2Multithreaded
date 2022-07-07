@@ -4,8 +4,8 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Manufacturer {
-    private final int AUTO_ASSEMBLY_TIME = 3000;
-    private final int TIME_BUYING_CAR = 3000;
+    private static final int AUTO_ASSEMBLY_TIME = 3000;
+    private static final int TIME_BUYING_CAR = 3000;
     private CarDealership carDealership;
     private ReentrantLock reentrantLock = new ReentrantLock(true);
     private Condition condition = reentrantLock.newCondition();
