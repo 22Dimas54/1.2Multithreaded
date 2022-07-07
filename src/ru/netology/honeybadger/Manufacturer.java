@@ -1,8 +1,8 @@
 package ru.netology.honeybadger;
 
 public class Manufacturer {
-    private final int AUTO_ASSEMBLY_TIME = 3000;
-    private final int TIME_BUYING_CAR = 3000;
+    private static final int AUTO_ASSEMBLY_TIME = 3000;
+    private static final int TIME_BUYING_CAR = 3000;
     private CarDealership carDealership;
 
     public Manufacturer(CarDealership carDealership) {
